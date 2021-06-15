@@ -9,3 +9,16 @@ var books = [
 ]
  
 // Tulis code untuk memanggil function readBooks di sini
+books.forEach(element => readBooks(10000, element, (callbackFn) => {console.log(callbackFn)})) 
+ if (i < books.length) { 
+	readBooks(time, books[i], function (sisa) 
+		{ 
+		if (sisa > 0) 
+			{ 
+			i += 1; 
+			baca(sisa, books, i); 
+			}
+		}) 
+	}
+} 
+baca(10000, books, 0) 
